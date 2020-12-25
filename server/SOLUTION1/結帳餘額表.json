@@ -1,0 +1,1 @@
+[{"id":"結帳餘額表","commandText":"SELECT 結帳餘額表,結帳年月,科目編號,科目名稱,上期餘額,借方金額,貸方金額,本期餘額 FROM [結帳餘額表]","keys":"結帳年月,科目編號","type":"infocommand","selectPaging":true},{"id":"uc結帳餘額表","infocommand":"結帳餘額表","type":"updatecomponent"}]

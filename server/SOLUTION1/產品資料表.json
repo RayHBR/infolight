@@ -1,0 +1,41 @@
+[
+  {
+    "id": "產品資料表",
+    "commandText": "SELECT 產品編號,產品名稱,產品類別,規格,產品說明,產地,單位,單價,成本價,廠商,成本日期,最近售價,銷售日期,庫存量,NoValue,使用說明,運費及運送方式,保鮮期_天_,保固期_天_,產品圖片 FROM [產品資料表]",
+    "commandType": "text",
+    "database": "",
+    "runtimeDatabase": "",
+    "keys": "產品編號",
+    "secStyle": "none",
+    "secField": "",
+    "secExcept": "",
+    "siteField": "",
+    "selectPaging": true,
+    "descent": false,
+    "cacheData": false,
+    "cacheTTL": 1440,
+    "parameters": [],
+    "nonlogon": false,
+    "onBeforeExecuteSQL": "",
+    "onAfterExecuteSQL": "",
+    "type": "infocommand"
+  },
+  {
+    "id": "uc產品資料表",
+    "infocommand": "產品資料表",
+    "fields": [],
+    "rowsAffectCheck": true,
+    "updateIfExists": false,
+    "isolationLevel": "readCommitted",
+    "onBeforeInsert": "",
+    "onBeforeUpdate": "",
+    "onBeforeDelete": "",
+    "onBeforeApply": "",
+    "onAfterInsert": "",
+    "onAfterUpdate": "",
+    "onAfterDelete": "",
+    "onAfterApply": "",
+    "onAfterApplied": "",
+    "type": "updatecomponent"
+  }
+]
