@@ -1,0 +1,245 @@
+[
+  {
+    "id": "客戶資料表",
+    "commandText": "SELECT 客戶編號,建檔日期,客戶名稱,客戶簡稱,統一編號,地址,聯絡人,職稱,電話,手機號碼,傳真,建檔者,電子郵箱,網址,負責業務,等級,保固日期,計數,備註,行業別,資本額,公司性質,負責人,付款方式,往來銀行,最後聯繫日,最後聯繫狀況 FROM [客戶資料表]",
+    "commandType": "text",
+    "database": "",
+    "runtimeDatabase": "",
+    "keys": "客戶編號",
+    "secStyle": "none",
+    "secField": "",
+    "secExcept": "",
+    "siteField": "",
+    "selectPaging": true,
+    "descent": false,
+    "cacheData": false,
+    "cacheTTL": 1440,
+    "parameters": [],
+    "nonlogon": false,
+    "onBeforeExecuteSQL": "",
+    "onAfterExecuteSQL": "",
+    "type": "infocommand"
+  },
+  {
+    "id": "uc客戶資料表",
+    "infocommand": "客戶資料表",
+    "fields": [],
+    "rowsAffectCheck": true,
+    "updateIfExists": false,
+    "isolationLevel": "readCommitted",
+    "onBeforeInsert": "",
+    "onBeforeUpdate": "",
+    "onBeforeDelete": "",
+    "onBeforeApply": "",
+    "onAfterInsert": "",
+    "onAfterUpdate": "",
+    "onAfterDelete": "",
+    "onAfterApply": "",
+    "onAfterApplied": "",
+    "type": "updatecomponent"
+  },
+  {
+    "id": "客戶聯絡人",
+    "commandText": "SELECT 客戶編號,次序,姓名,電話及分機,手機號碼,電子郵箱,部門,職稱,備註 FROM [客戶聯絡人]",
+    "commandType": "text",
+    "database": "",
+    "runtimeDatabase": "",
+    "keys": "客戶編號,次序",
+    "secStyle": "none",
+    "secField": "",
+    "secExcept": "",
+    "siteField": "",
+    "selectPaging": true,
+    "descent": false,
+    "cacheData": false,
+    "cacheTTL": 1440,
+    "parameters": [],
+    "nonlogon": false,
+    "onBeforeExecuteSQL": "",
+    "onAfterExecuteSQL": "",
+    "type": "infocommand"
+  },
+  {
+    "id": "uc客戶聯絡人",
+    "infocommand": "客戶聯絡人",
+    "fields": [],
+    "rowsAffectCheck": true,
+    "updateIfExists": false,
+    "isolationLevel": "readCommitted",
+    "onBeforeInsert": "",
+    "onBeforeUpdate": "",
+    "onBeforeDelete": "",
+    "onBeforeApply": "",
+    "onAfterInsert": "",
+    "onAfterUpdate": "",
+    "onAfterDelete": "",
+    "onAfterApply": "",
+    "onAfterApplied": "",
+    "type": "updatecomponent"
+  },
+  {
+    "id": "ids客戶聯絡人",
+    "masterCommand": "客戶資料表",
+    "masterColumns": "客戶編號",
+    "detailCommand": "客戶聯絡人",
+    "detailColumns": "客戶編號",
+    "type": "infodatasource"
+  },
+  {
+    "id": "客戶拜訪紀錄",
+    "commandText": "SELECT 客戶編號,次序,日期,聯絡人,拜訪方式,拜訪內容,聯繫人,備註,計數 FROM [客戶拜訪紀錄]",
+    "commandType": "text",
+    "database": "",
+    "runtimeDatabase": "",
+    "keys": "客戶編號,次序",
+    "secStyle": "none",
+    "secField": "",
+    "secExcept": "",
+    "siteField": "",
+    "selectPaging": true,
+    "descent": false,
+    "cacheData": false,
+    "cacheTTL": 1440,
+    "parameters": [],
+    "nonlogon": false,
+    "onBeforeExecuteSQL": "",
+    "onAfterExecuteSQL": "",
+    "type": "infocommand"
+  },
+  {
+    "id": "uc客戶拜訪紀錄",
+    "infocommand": "客戶拜訪紀錄",
+    "fields": [],
+    "rowsAffectCheck": true,
+    "updateIfExists": false,
+    "isolationLevel": "readCommitted",
+    "onBeforeInsert": "",
+    "onBeforeUpdate": "",
+    "onBeforeDelete": "",
+    "onBeforeApply": "",
+    "onAfterInsert": "",
+    "onAfterUpdate": "",
+    "onAfterDelete": "",
+    "onAfterApply": "",
+    "onAfterApplied": "",
+    "type": "updatecomponent"
+  },
+  {
+    "id": "ids客戶拜訪紀錄",
+    "masterCommand": "客戶資料表",
+    "masterColumns": "客戶編號",
+    "detailCommand": "客戶拜訪紀錄",
+    "detailColumns": "客戶編號",
+    "type": "infodatasource"
+  },
+  {
+    "id": "trs客戶資料表",
+    "updatecomponent": "uc客戶資料表",
+    "transactions": [
+      {
+        "targetTable": "員工資料表",
+        "exceptionMessage": "",
+        "whenInsert": true,
+        "whenUpdate": true,
+        "whenDelete": true,
+        "transMode": "exception",
+        "keyFields": [
+          {
+            "targetField": "員工編號",
+            "sourceField": "負責業務"
+          }
+        ],
+        "fields": [
+          {
+            "updateMode": "increase",
+            "targetField": "目前鎖定數",
+            "sourceField": "計數"
+          }
+        ],
+        "onBeforeTrans": "trs客戶資料表_員工資料表_onBeforeTrans"
+      }
+    ],
+    "type": "infotransaction"
+  },
+  {
+    "id": "trs客戶聯絡人",
+    "updatecomponent": "uc客戶聯絡人",
+    "transactions": [],
+    "type": "infotransaction"
+  },
+  {
+    "id": "trs客戶拜訪紀錄",
+    "updatecomponent": "uc客戶拜訪紀錄",
+    "transactions": [
+      {
+        "targetTable": "客戶資料表",
+        "exceptionMessage": "",
+        "whenInsert": true,
+        "whenUpdate": true,
+        "whenDelete": false,
+        "transMode": "exception",
+        "keyFields": [
+          {
+            "targetField": "客戶編號",
+            "sourceField": "客戶編號"
+          }
+        ],
+        "fields": [
+          {
+            "updateMode": "replace",
+            "targetField": "最後聯繫日",
+            "sourceField": "日期"
+          },
+          {
+            "updateMode": "replace",
+            "targetField": "最後聯繫狀況",
+            "sourceField": "拜訪內容"
+          }
+        ]
+      }
+    ],
+    "type": "infotransaction"
+  },
+  {
+    "id": "ref_員工資料表",
+    "commandText": "SELECT 備註,員工編號,姓名,到職日期 FROM [員工資料表]",
+    "commandType": "text",
+    "database": "",
+    "runtimeDatabase": "",
+    "keys": "",
+    "secStyle": "none",
+    "secField": "",
+    "secExcept": "",
+    "siteField": "",
+    "selectPaging": false,
+    "descent": false,
+    "cacheData": false,
+    "cacheTTL": 1440,
+    "parameters": [],
+    "nonlogon": false,
+    "onBeforeExecuteSQL": "",
+    "onAfterExecuteSQL": "",
+    "type": "infocommand"
+  },
+  {
+    "id": "ref_客戶聯絡人",
+    "commandText": "SELECT 客戶編號,次序,姓名,電話及分機,手機號碼,電子郵箱,部門,職稱,備註 FROM [客戶聯絡人]",
+    "commandType": "text",
+    "database": "",
+    "runtimeDatabase": "",
+    "keys": "",
+    "secStyle": "none",
+    "secField": "",
+    "secExcept": "",
+    "siteField": "",
+    "selectPaging": false,
+    "descent": false,
+    "cacheData": false,
+    "cacheTTL": 1440,
+    "parameters": [],
+    "nonlogon": false,
+    "onBeforeExecuteSQL": "",
+    "onAfterExecuteSQL": "",
+    "type": "infocommand"
+  }
+]

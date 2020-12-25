@@ -1,0 +1,41 @@
+[
+  {
+    "id": "員工資料表",
+    "commandText": "SELECT 員工編號,建檔日期,姓名,相片,英文姓名,身分證號,電郵信箱,到職日期,戶籍地址,出生年月日,性別,通訊地址,血型,聯絡電話_H_,婚姻狀況,聯絡電話_M_,兵種階級,服役期間,駕駛執照,緊急聯絡人,學歷,其他專長及相關證照,家庭狀況 FROM [員工資料表]",
+    "commandType": "text",
+    "database": "",
+    "runtimeDatabase": "",
+    "keys": "員工編號,姓名",
+    "secStyle": "none",
+    "secField": "",
+    "secExcept": "",
+    "siteField": "",
+    "selectPaging": true,
+    "descent": false,
+    "cacheData": false,
+    "cacheTTL": 1440,
+    "parameters": [],
+    "nonlogon": false,
+    "onBeforeExecuteSQL": "",
+    "onAfterExecuteSQL": "",
+    "type": "infocommand"
+  },
+  {
+    "id": "uc員工資料表",
+    "infocommand": "員工資料表",
+    "fields": [],
+    "rowsAffectCheck": true,
+    "updateIfExists": false,
+    "isolationLevel": "readCommitted",
+    "onBeforeInsert": "",
+    "onBeforeUpdate": "",
+    "onBeforeDelete": "",
+    "onBeforeApply": "",
+    "onAfterInsert": "",
+    "onAfterUpdate": "",
+    "onAfterDelete": "",
+    "onAfterApply": "",
+    "onAfterApplied": "",
+    "type": "updatecomponent"
+  }
+]
