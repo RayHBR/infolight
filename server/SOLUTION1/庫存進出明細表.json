@@ -1,0 +1,1 @@
+[{"id":"庫存進出明細表","commandText":"SELECT 產品編號,單據號碼,日期,產品名稱,倉庫,進銷,數量,單價 FROM [庫存進出明細表]","keys":"產品編號,單據號碼","type":"infocommand","selectPaging":true},{"id":"uc庫存進出明細表","infocommand":"庫存進出明細表","type":"updatecomponent"}]
