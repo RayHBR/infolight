@@ -1,0 +1,940 @@
+[
+  {
+    "id": "header",
+    "title": "",
+    "collapsed": false,
+    "hidden": false,
+    "background": "",
+    "type": "panel",
+    "childrens": [
+      {
+        "id": "css",
+        "html": "<style>\nbody {\n    font-family: \"Microsoft JhengHei\",\"PingFang TC\";\n    color: #303030;\n    letter-spacing: 0.1em;\n    font-size:16px;\n}\n\na {\n    cursor: pointer;\n    text-decoration: none;\n    color: #303030;\n}\n\nimg {\n    /*display:block;*/\n    border: none;\n    outline: none;\n}\n  \n/* Footer */\n.footer {\n    padding-top: 20px;\n    padding-bottom: 20px;\n    background-color: #0e294c;\n    font-size: 16px;\n    color: white;\n    line-height: 24px;\n}\n  \n.footer-title {\n    font-size: 22px;\n    margin-bottom:20px;\n   font-weight: 600;\n}  \n  \n.footer a {\n    color: white;\n    text-decoration:none;\n} \n.footer_boottom {\n    text-align: center;\n    padding-top: 3px;\n    padding-bottom: 8px;\n    background-color: #0e294c;\n    font-size: 16px;\n    color: white;\n    line-height: 24px;\n}\n\n\na:hover {\n    color: #2e7ce5;\n    text-decoration: none;\n}\n  \n\n.img-responsive {\n  /*  margin: 0 auto;  */\n  margin: 0 ;\n}\n  \n\n.about_top {\n    margin-top: 10px;\n    margin-bottom: 30px;\n}\n\n.main{\n\tbackground: #fff;\n}\n  \n\n.navbar-default .navbar-nav>li>a,\n.navbar-default .navbar-nav .dropdown-menu>li>a\n  {\n  \t color: #303030;\n     font-weight: 600;\n    font-size: 18px;\n  }  \n  \n  \n  \n.navbar-default .navbar-nav>li:hover>a,\n.navbar-default .navbar-nav .dropdown-menu>li:hover>a\n  {\n  \t background: #2e7ce5 !important;\n\t color: white !important;\n  }\n  \n.fiximg{\n \twidth:100%;\n    height:auto;\n }\n  \n.pd-50{\n  padding:50px 0;\n  }\n  \n.fa-3 {\n    font-size: 3em !important;\n} \n\n.icon-cir{\n    padding: 20px 5px;\n  }\n  \n@media (min-width: 768px) {  \n.navbar-brand > img{\n  \tdisplay:none;\n  }\n  \n.navbar-default > div\n  {\n  \t max-width:83%;\n     margin:0 auto;\n  }  \n.logo-cls\n  {\n  \t max-width:78%;\n     margin:0 auto;\n  }    \n  \n}  \n  .toTop-arrow {\n    z-index: 9999;\n    width: 5.5rem;\n    height: 5.5rem;\n    padding: 0;\n    margin: 0;\n    border: 0;\n    border-radius: 33%;\n    opacity: 0.6;\n    background: #000;\n    cursor: pointer;\n    position: fixed;\n    right: 2rem;\n    bottom: 2rem;\n    display: none;\n}\n\n\n  \n</style>\n",
+        "type": "literal"
+      },
+      {
+        "id": "Literal1",
+        "html": "<style>  \n#Logon1 .modal-content {\n\twidth:400px;\n  \tmax-width:100%;\n  \tbackground-image: url('../file/images?q=login-bg.jpg');\n  \tbackground-size: cover;\n  \tcolor:white;\n  }  \n#Logon1 .modal-dialog {\n\twidth:400px;\n    max-width:100%;\n  }\n\n#Logon1 .modal-title{\n  font-size:20px;\n  }\n  \n #Logon1 .control-label{\n   width:100% !important;\n       text-align: left !important;\n  }\n  \n  #Logon1 .row > div{\n  \t width:100% !important;\n  }\n\n#Logon1_user {\n   width:100% !important;\n  }\n  \n  #Logon1_password{\n   width:100% !important;    \n  }\n #Logon1 .form-editor {\n   width:100% !important;    \n  }\n  \n #Logon1  .form-group > .hidden-xs {\n    display:none;\n  }\n  \n #Logon1 .forget > a {\n  margin:0 10px;\n   color:#474747;\n   font-weight:600;\n  } \n  \n  .lcs_switch{\n   margin-top:5px;\n  }\n  \n  \n  \n.form-horizontal .control-label {\n  font-size:18px;\n  }\n.forget {\n  text-align:right;\n  }\n  \n#ImageList2 .img-responsive {\n    margin: 0;\n \twidth: 100%; \n}\n#ImageList2 .row>div{\n /*padding: 0px*/\n}\n#ImageList2 .container {\n   margin-right: 0;\n   margin-left: 0;\n}\n\n.top_contend {\n\tpadding: 15px 0;\n    font-size: 12px;\n    width: 100%;\n    margin: 0 auto;\n    line-height: 28px;\n    overflow: hidden;\n}\n  \n.top_contend>p {\n    float: left;\n    font-size: 12px;\n}\n\n.top_contend>ul>li {\n    list-style: none;\n    float: right;\n    padding: 10px 5px;\n}\n  \n.logo-img {\n  margin-left:0px;\n  }\n  \n.h4a{\n  margin-bottom:20px;\n  }\n  \n#label1  {\n  padding-top:25px;\n  padding-bottom:10px;\n }\n\n#Label2  {\n  padding-top:25px;\n  padding-bottom:10px;\n }\n  \n#Carousel1  {\n  padding:0 !important;\n }\n  \n#Layout2 {\n  padding:0 !important;\n } \n  \n.table-cell-text  {\n  white-space:pre-wrap;\n  }  \n  \n.fullwidth{\n  max-width:100%;\n  }\n \n.margin-0{\n  margin:0 auto !important;\n  } \n  \n.banner-img {\n  background-attachment: fixed;\n  height:auto;\n  min-height: 300px;\n  width:100%;\n  }  \n  \n.text-center {\n  text-align:center;\n  }   \n\n .banner-h1 {\n   font-size: 50px;\n   color: #fff;\n   padding-top:100px;\n   letter-spacing: 8px;\n  }\n  \n .banner-p {\n   font-size: 20px;\n   color: #e0e0e0;\n   font-weight:100;\n  }    \n  \n.image-text {\n    display: block;\n    text-align: center;\n    font-size: 20px;\n    font-family: \"Microsoft JhengHei\",\"PingFang TC\";\n    background-color: white;\n    color: #2e7ce5;\n  }   \n  \n.image-box:hover .image-text {\n    background-color: white !important;\n    color: #c2dcff;\n  }  \n  \n.image-box{\n  border:0;\n  }\n  \n  \n/* 關於訊光 */\n.xun_tab {\n    margin-top: 5px;\n    border: 1px solid #d2d2d2;\n}\n\n.xun_tab-header {\n    width: 100%;\n    line-height: 50px;\n    background-color: rgba(238, 123, 87, 0.9);\n    font-size: 22px;\n    color: white;\n    letter-spacing: 0.5em;\n    text-indent: 0.5em;\n    text-align: center;\n}\n\n.xun_tab>ul {\n    padding: 0 5px;\n}\n\n.xun_tab>ul>li {\n    margin: 5px 0;\n    list-style-type: none;\n    line-height: 44px;\n    background-color: #EEEEEE;\n    color: #666666;\n    font-size: 18px;\n    text-align: center;\n    cursor: pointer;\n}\n\n.xun_tab>ul>li:hover,\n.xun_tab>ul>li.active {\n    color: #FFFFFF;\n    background-color: #999;\n}\n  \n.about_top {\n    margin-top: 10px;\n    margin-bottom: 30px;\n}\n\n.about_top .tab_01_title {\n    font-size: 28px;\n    color: #004EA2;\n}\n\n.tab_01_introduction {\n    margin: 10px 0 15px;\n    line-height: 1.5;\n    text-indent: 32px;\n}\n\n  \n.hexin hr {\n    margin-bottom: 12px;\n}\n\n.hexin p {\n    font-size: 20px;\n    color: #2e7ce5;\n    margin-top: 12px;\n}\n\n.hexin span {\n    font-size: 16px;\n    float: none;\n    margin-top: 4px;\n    margin-bottom: 20px;\n    display: block;\n}\n  \n.gap-30{\n\tclear: both;\n    height: 30px;\n}  \n  \n@media (min-width: 768px) { \n  .h4b{\n    margin-left:50px;\n    }  \n  #Carousel1 > div > div >img {\n    background-attachment: fixed;\n    height:auto;\n    width:auto;\n    left:25%;\n    width: 100%; \n  }\n  \n  }\n  \n@media (max-width: 768px) { \n  \n#Carousel1 > div > div >img {\n  background-attachment: fixed;\n  height:300px;\n  width:auto;\n  margin-left:-280px;\n  max-width: 800%; \n  }\n  \n.banner-img {\n  background-attachment: fixed;\n  height:300px;\n  width:auto;\n  background-position: 50% 50%;\n  max-width: 800%; \n  }\n  \n.navbar-brand>img {\n  content:url(\"../file/images?q=logo2.png\");\n  }  \n  \n.top_contend {\n  padding:0;\n  }\n  \n}  \n \n</style>\n\n<div class=\"row logo-cls\">\n\t<div class=\"hidden-xs col-sm-6\">\n\t\t<a href=\"../../WEBHOME\" target=\"_top\">        \n\t\t\t<img class=\"img-responsive logo-img\" src=\"../file/images?q=logo.png\">\n\t\t</a>\n\t</div>\n\t<div class=\"col-xs-12 col-sm-6\">\n\t\t<div class=\"top_contend\">\n\t\t\t <ul id=\"loginlist\" class=\"login\">\n                <li class=\"changePWD\"><label data-toggle=\"tooltip\" data-placement=\"right\" data-html=\"false\" title=\"修改密碼\"><a onclick=\"changePWD()\" id=\"changePWD\" style=\"cursor:pointer;\" class=\"fa fa-key fa-2x\"></a></label></li>\n\t\t\t\t<li><span class=\"glyphicon glyphicon-user fa-2x\"></span><span class=\"btn-text\" style=\"margin-left: 5px;font-size:18px;\">\n\t\t\t\t\t<a onclick=\"login()\" id=\"loginLink\" style=\"cursor:pointer;\">登入</a></span></li>\n\t\t\t\t<li><a href=\"https://www.youtube.com/channel/UCfK5s4zxas-80cStWsukd-g\" target='_blank'>\n\t\t\t\t\t<img class=\"img-responsive\" src=\"../file/images?q=btn_youtube.png\"> </a></li>\n\t\t\t\t<li><a href=\"https://www.facebook.com/infolight.tw/?ref=bookmarks\" target='_blank'>\n\t\t\t\t\t<img class=\"img-responsive\" src=\"../file/images?q=btn_fb.png\"> </a></li>\n\t\t\t </ul>\n\t\t</div>\n\t</div>\n</div>\n<script>function open_window(full_link)\n{ \n    window.open('javascript:window.name;','<script>location.replace(\"'+full_link+'\")<\\/script>');\n}\n/*function gotoHome(){\n    var s = window.location.href;\n    if(s !='https://www.infolight.com/webhome'){ \n      window.location.href=\"https://www.infolight.com/webhome\"; //或者使用window.location.assign(\"login地址\"); \n    } \n}*/\n</script>\n\n<button id=\"BackTop\" \n        class=\"toTop-arrow\" \n        onclick=\"backtop()\" \n        style=\"display: inline-block;\" \n        type=\"button\">\n        <span class=\"btn-text\" style=\"color: #f90;\">TOP</span>\n</button>",
+        "type": "literal"
+      },
+      {
+        "id": "Menu1",
+        "bindingObject": "body",
+        "items": [
+          {
+            "caption": "關於訊光",
+            "alignment": "left",
+            "subItems": [],
+            "url": "#profile",
+            "onClick": ""
+          },
+          {
+            "caption": "訊光產品",
+            "alignment": "left",
+            "subItems": [
+              {
+                "caption": "EEP.NETCore",
+                "url": "PRODUCTS",
+                "onClick": "openProduct"
+              },
+              {
+                "caption": "EEP2019",
+                "url": "PRODUCTS",
+                "onClick": "openProduct"
+              },
+              {
+                "caption": "Workflow",
+                "url": "PRODUCTS",
+                "onClick": "openProduct"
+              },
+              {
+                "caption": "RWD&APP模組",
+                "url": "PRODUCTS",
+                "onClick": "openProduct"
+              },
+              {
+                "caption": "EEPCloud",
+                "url": "PRODUCTS",
+                "onClick": "openProduct"
+              },
+              {
+                "caption": "iCoder",
+                "url": "PRODUCTS",
+                "onClick": "openProduct"
+              }
+            ],
+            "url": "PRODUCTS",
+            "onClick": ""
+          },
+          {
+            "caption": "專刊分享",
+            "alignment": "left",
+            "subItems": [],
+            "url": "DOCUMENTS",
+            "onClick": ""
+          },
+          {
+            "caption": "下載專區",
+            "alignment": "left",
+            "subItems": [],
+            "url": "#download",
+            "onClick": ""
+          },
+          {
+            "caption": "討論專區",
+            "alignment": "left",
+            "subItems": [],
+            "url": "DISCUSS",
+            "onClick": ""
+          },
+          {
+            "caption": "客戶見證",
+            "alignment": "left",
+            "subItems": [],
+            "url": "COOPERATION",
+            "onClick": ""
+          },
+          {
+            "caption": "常見問答",
+            "alignment": "left",
+            "subItems": [
+              {
+                "caption": "EEP.NET",
+                "url": "EEP.NETQA",
+                "onClick": "openQA"
+              },
+              {
+                "caption": "Workflow",
+                "url": "WorkflowQA",
+                "onClick": "openQA"
+              },
+              {
+                "caption": "RWD & APP 模組",
+                "url": "RWD & APP 模組QA",
+                "onClick": "openQA"
+              },
+              {
+                "caption": "EEPCloud",
+                "url": "EEPCloudQA",
+                "onClick": "openQA"
+              },
+              {
+                "caption": "iCoder",
+                "url": "iCoderQA",
+                "onClick": "openQA"
+              }
+            ],
+            "url": "#qa",
+            "onClick": ""
+          },
+          {
+            "caption": "線上手冊",
+            "alignment": "left",
+            "subItems": [],
+            "url": "#help",
+            "onClick": ""
+          },
+          {
+            "caption": "影音專區",
+            "alignment": "left",
+            "subItems": [],
+            "url": "AUDIO",
+            "onClick": ""
+          },
+          {
+            "caption": "聯絡我們",
+            "alignment": "left",
+            "subItems": [],
+            "url": "#about",
+            "onClick": ""
+          }
+        ],
+        "menuCls": "",
+        "logo": "logo.png",
+        "refreshPage": true,
+        "onRenderItem": "",
+        "onLoadError": "",
+        "type": "menu"
+      },
+      {
+        "id": "Logon1",
+        "title": " 帳號登入",
+        "userText": "使用者帳號",
+        "passwordText": "密碼",
+        "captcha": true,
+        "forgetPassword": true,
+        "registered": true,
+        "type": "logon"
+      }
+    ]
+  },
+  {
+    "id": "body",
+    "title": "",
+    "collapsed": false,
+    "hidden": false,
+    "background": "#ffffff",
+    "type": "panel",
+    "childrens": [
+      {
+        "id": "Layout2",
+        "columns": [
+          {
+            "columnCls": "col-xs-12",
+            "childrens": [
+              {
+                "id": "Label1",
+                "text": "本網站使用EEPCloud所設計",
+                "color": "#ff0000",
+                "background": "",
+                "padding": "",
+                "border": "",
+                "font": "14px Arial",
+                "labelCls": "",
+                "onClick": "",
+                "type": "label"
+              },
+              {
+                "id": "Carousel1",
+                "remoteName": "首頁廣告.首頁廣告顯示",
+                "pageSize": 6,
+                "imageFolder": "Images",
+                "imageField": "圖示",
+                "captionField": "",
+                "urlField": "連結",
+                "bindingObject": "body",
+                "images": [],
+                "interval": 5000,
+                "transition": "slide",
+                "onClick": "",
+                "type": "carousel"
+              },
+              {
+                "id": "Literal15",
+                "html": "<style>\n#Label1 {\n  text-align:right;\n  padding：3px;\n  }\n</style>",
+                "type": "literal"
+              },
+              {
+                "id": "Label3",
+                "text": " \n",
+                "color": "",
+                "background": "",
+                "padding": "",
+                "border": "",
+                "font": "",
+                "labelCls": "",
+                "onClick": "",
+                "type": "label"
+              }
+            ]
+          }
+        ],
+        "containerCls": "container-fluid",
+        "type": "layout"
+      },
+      {
+        "id": "Layout7",
+        "columns": [
+          {
+            "columnCls": "col-xs-12 col-sm-6",
+            "childrens": [
+              {
+                "id": "Literal14",
+                "html": "<div class=\"page-about main\">\n    <div class=\"container content\">\n        <div class=\"row\">\n           <div class=\"col-sm-12 about_top\">\n                <div>\n                    <div class=\"row\">\n                        <div class=\"col-xs-6\">\n                            <p class=\"tab_01_title\">最新消息</p>\n                        </div>\n                    </div>\n                  \t<hr>\n                 </div>\n            </div>\n        </div>\n    </div>\n</div>",
+                "type": "literal"
+              }
+            ]
+          }
+        ],
+        "containerCls": "container",
+        "type": "layout"
+      },
+      {
+        "id": "Layout8",
+        "columns": [
+          {
+            "columnCls": "col-xs-12 col-sm-4",
+            "childrens": [
+              {
+                "id": "Image1",
+                "src": "news-concept.jpg",
+                "imageCls": "img-responsive",
+                "style": "shadow",
+                "onClick": "",
+                "onMouseMove": "",
+                "type": "image"
+              }
+            ]
+          },
+          {
+            "columnCls": "col-xs-12 col-sm-8",
+            "childrens": [
+              {
+                "id": "DataGrid1",
+                "remoteName": "最新消息.最新消息顯示",
+                "columns": [
+                  {
+                    "title": "消息內容",
+                    "field": "消息內容",
+                    "alignment": "",
+                    "nowrap": false,
+                    "hidden": false,
+                    "sortable": false,
+                    "total": "none",
+                    "showxs": true,
+                    "showsm": true,
+                    "format": "",
+                    "formatter": "DataGrid1_消息內容_formatter",
+                    "editor": {
+                      "type": "textbox"
+                    },
+                    "relation": {},
+                    "isMerge": true,
+                    "width": 57
+                  },
+                  {
+                    "title": "日期",
+                    "field": "日期",
+                    "alignment": "",
+                    "nowrap": false,
+                    "hidden": false,
+                    "sortable": false,
+                    "total": "none",
+                    "showxs": true,
+                    "showsm": true,
+                    "format": "yyyy/MM/dd",
+                    "formatter": "",
+                    "editor": {
+                      "type": "textbox"
+                    },
+                    "relation": {},
+                    "isMerge": true,
+                    "width": 33
+                  }
+                ],
+                "whereStr": "",
+                "autoApply": true,
+                "validateXss": true,
+                "confirmDelete": true,
+                "duplicateCheck": true,
+                "editOnEnter": false,
+                "toolItems": [],
+                "toolItemPosition": "top",
+                "viewCommandVisible": false,
+                "editCommandVisible": false,
+                "deleteCommandVisible": false,
+                "columnHidable": false,
+                "editForm": "",
+                "parentObject": "",
+                "targetObject": "",
+                "targetDataGrid": "",
+                "whereItems": [],
+                "totalMode": "page",
+                "showColumnTitle": true,
+                "autoQueryColumn": false,
+                "queryColumns": [],
+                "queryMode": "dialog",
+                "queryTitle": "Query",
+                "queryColumnsCount": 2,
+                "showCheckbox": false,
+                "checkOnSelect": false,
+                "recordLock": false,
+                "pagination": true,
+                "rownumbers": false,
+                "reportName": "",
+                "pageSize": 10,
+                "title": "",
+                "height": "",
+                "rowStyler": "",
+                "onBeforeLoad": "",
+                "onLoad": "",
+                "onSelect": "",
+                "onInsert": "",
+                "onUpdate": "",
+                "onDelete": "",
+                "onDeleted": "",
+                "onQuery": "",
+                "onImportExcelSuccess": "",
+                "onShowEditor": "",
+                "onEndEdit": "",
+                "onTotal": "",
+                "bordered": true,
+                "hover": true,
+                "striped": false,
+                "condensed": false,
+                "xsblock": false,
+                "simple": false,
+                "type": "datagrid"
+              },
+              {
+                "id": "Counter1",
+                "remoteName": "最新消息.最新消息",
+                "keyField": "編號",
+                "counterField": "人氣",
+                "formatter": "",
+                "type": "counter"
+              }
+            ]
+          }
+        ],
+        "containerCls": "container",
+        "type": "layout"
+      },
+      {
+        "id": "Layout9",
+        "columns": [
+          {
+            "columnCls": "col-xs-12 col-sm-6",
+            "childrens": [
+              {
+                "id": "Literal12",
+                "html": "<div class=\"page-about main\">\n    <div class=\"container content\">\n      <div class=\"gap-30\"></div><div class=\"gap-30\"></div>\n        <div class=\"row\">\n           <div class=\"col-sm-12 about_top\">\n                <div>\n                    <div class=\"row\">\n                        <div class=\"col-xs-6\">\n                            <p class=\"tab_01_title\">公司簡介</p>\n                        </div>\n                    </div>\n                    <hr>\n                    <div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-xs-12 col-sm-7\">\n                        \t<img id=\"Image1\" class=\"fiximg shadow\" src=\"../file/images?q=about01.png\" onclick=\"\">\n                       </div>                      \n                        <div class=\"col-xs-12 col-sm-5\">\n                            <br>\n                            <p class=\"tab_01_introduction\" style=\"font-size:20px;\">\n                                    訊光科技，一家以研發軟體工程技術為本的公司，致力於高生產力的開發工具長達三十餘年。\n核心技術有RWD UX組件、資料處理組件、工作流程引擎、AI程式碼自動產生、雲端PaaS框架\n等，可應用在.NET(含Core)及Node平台上。<br>\n\n    \n                            </p>\n                            <p class=\"tab_01_introduction\" style=\"font-size:20px;\">\n                                軟體工程一直是業界一大困擾，內有人員培養不易、高流動率、低生產力與品質低落問題；外有新技術不斷推陳出新、同業競爭壓力等；訊光長期累積了軟體工程技術與頂尖團隊，從DOS、WINDOWS、WEB一直到APP，以創新研發與優異技術能力，促進同業軟體工程標準化，讓軟體開發能更快速、更標準更有品質，來大幅降低軟體建置成本與風險。<br>\n                            </p>\n                          \n                        </div>\n                    </div>\n                </div>\n                <div class=\"gap-30\"></div><div class=\"gap-30\"></div>\n                <div>\n                    <div class=\"row\">\n                        <div class=\"col-xs-6\">\n                            <p class=\"tab_01_title\">競爭核心</p>\n                        </div>\n                    </div>\n                    <hr>\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                            <img src=\"../file/images?q=017-team management.png\" onclick=\"\">\n                            <p>堅強的研發團隊</p>\n                            <span>訊光長期網羅國內頂尖研發人才，為客戶的現在及未來需求提供最佳解決方案。</span>\n                      </div>\n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                            <img src=\"../file/images?q=003-search.png\" onclick=\"\">\n                            <p>專業的工具知識能力</p>\n                            <span>25年十代工具產品的經驗累積，經過數千客戶驗證與考驗，最專業的工具廠商。</span>\n                      </div>\n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                            <img src=\"../file/images?q=030-laptop.png\" onclick=\"\">\n                            <p>貼心的專業服務</p>\n                            <span>完善周到的服務是我們的承諾，我們就是客戶的研發部門為宗旨，堅持好還要更好。</span>\n                      </div> \n                      <div class=\"gap-30 hidden-xs\"></div>\n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                          <img src=\"../file/images?q=041-coding.png\" onclick=\"\">\n                          <p>開放的原始碼</p>\n                            <span>提供所有必要性的原始程式碼，讓客戶能繼承與再用我們的研發成果。</span>\n                      </div> \n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                            <img src=\"../file/images?q=029-balance.png\" onclick=\"\">\n                            <p>提供最佳性價比</p>\n                            <span>從人員培訓到技術移轉，從提供現成應用模組到委託專案開發，以最低價格得到最大效益。</span>\n                        </div>                       \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>",
+                "type": "literal"
+              },
+              {
+                "id": "Literal13",
+                "html": "<div class=\"page-about main\">\n    <div class=\"container content\">\n        <div class=\"row\">\n           <div class=\"col-sm-12 about_top\">\n                <div class=\"gap-30\"></div><div class=\"gap-30\"></div>\n                <div>\n                    <div class=\"row\">\n                        <div class=\"col-xs-6\">\n                            <p class=\"tab_01_title\">公司產品</p>\n                        </div>\n                    </div>\n                  \t<hr>\n                 </div>\n            </div>\n        </div>\n    </div>\n</div>",
+                "type": "literal"
+              },
+              {
+                "id": "ImageList2",
+                "remoteName": "公司產品.公司產品主頁顯示",
+                "pageSize": 10,
+                "pagination": false,
+                "imageFolder": "Images",
+                "imageField": "照片",
+                "captionField": "產品名稱",
+                "urlField": "",
+                "bindingObject": "body",
+                "images": [],
+                "horizontalColumnsCount": 3,
+                "containerCls": "container",
+                "style": "transform-fixed",
+                "textFormatter": "",
+                "onClick": "ImageList2_onClick",
+                "type": "imagelist"
+              }
+            ]
+          }
+        ],
+        "containerCls": "container",
+        "type": "layout"
+      }
+    ]
+  },
+  {
+    "id": "footer",
+    "title": "",
+    "collapsed": false,
+    "hidden": false,
+    "background": "",
+    "type": "panel",
+    "childrens": [
+      {
+        "id": "Literal3",
+        "html": "<!--<link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\"> -->\n<div class=\"footer\">\n  \t<div class=\"container\">\n  \t\t<div class=\"row\">\n  \t\t\t<div class=\"col-md-4 col-sm-12\">\n  \t\t\t\t\t<h4 class=\"footer-title\">訊光科技<br>系統股份有限公司</h4>\n                 <p>\n一家以研發軟體工程技術為本的專業公司，致力於開發工具長達三十餘年， 從早期單純以更快更有效率的軟體開發工具，發展到同業標準化的共同元件與平臺，最後到最新的雲端PaaS平臺與AI自動化編寫程式等，宗旨就是要讓軟體開發能更快速、更標準、更有品質及無遠弗屆。\n              </p> \n              <a class=\"icon-cir\" href=\"https://www.facebook.com/infolight.tw/?ref=bookmarks\" target=\"_blank\"><i class=\"fa fa-facebook fa-3\" aria-hidden=\"true\"></i></a>                       \n              <a class=\"icon-cir\" href=\"https://www.youtube.com/channel/UCfK5s4zxas-80cStWsukd-g\" target=\"_blank\"><i class=\"fa fa-youtube fa-3\" aria-hidden=\"true\"></i></a>          \n  \t\t\t</div>  \n  \t\t\t<div class=\"col-md-4 col-sm-6\">\n  \t\t\t\t\t<h4 class=\"footer-title h4b\">公司產品</h4>\n                 <p> \n                        <a href=\"WEBHOME?m=PRODUCTS\"><h4 class=\"h4a h4b\">> EEP.NET Core</h4></a>\n\t\t\t\t\t\t<a href=\"WEBHOME?m=PRODUCTS\"><h4 class=\"h4a h4b\">> EEP 2019</h4></a>\n\t\t\t\t\t\t<a href=\"WEBHOME?m=PRODUCTS\"><h4 class=\"h4a h4b\">> Workflow Foundation</h4></a>\n\t\t\t\t\t\t<a href=\"WEBHOME?m=PRODUCTS\"><h4 class=\"h4a h4b\">> RWD + APP 模組</h4></a>\n             \t\t\t<a href=\"WEBHOME?m=PRODUCTS\"><h4 class=\"h4a h4b\">> EEPCloud</h4></a>            \n                        <a href=\"WEBHOME?m=PRODUCTS\"><h4 class=\"h4a h4b\">> iCoder</h4></a>\n  \t\t\t\t</p>\n  \t\t\t</div>          \n  \t\t\t<div class=\"col-md-4 col-sm-6\">\n                   <h4 class=\"footer-title\">聯絡資訊</h4>\n  \t\t\t\t\t<h4>訊光科技系統股份有限公司</h4>\n                 <p>\n\t\t\t\t\t\t<i class=\"fa fa-phone\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;電話：02-2556-6159<br>\n\t\t\t\t\t\t<i class=\"fa fa-fax\" aria-hidden=\"true\"></i>&nbsp;&nbsp;傳真：02-2556-9425<br>\n\t\t\t\t\t\t<i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;地址：103 臺北市大同區民生西路290號8樓\n  \t\t\t\t</p><br>\n  \t\t\t\t\t<h4>上海訊光</h4>\n                 <p> \n\t\t\t\t\t\t<i class=\"fa fa-phone\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;電話：021-6225-1720<br>\n\t\t\t\t\t\t<!-- <i class=\"fa fa-internet-explorer\" aria-hidden=\"true\"></i>&nbsp;&nbsp;網址：<a href=\"\">點擊前往</a><br> -->\n\t\t\t\t\t\t<i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;地址：上海市嘉定區金運路355號16號樓3層(華泰中心)<br>\n                        <i class=\"fa fa-home\" aria-hidden=\"true\"></i>&nbsp;&nbsp;上海官網：<a href=\"http://www.eepicoder.cn\" target=\"_blank\">http://www.eepicoder.cn</a>                  \n  \t\t\t\t</p>          \n  \t\t\t</div>     \n  \t\t</div>\n  \t</div>\n  </div>\n<div class=\"footer_boottom\">\n  <div class=\"gap-30\"></div><div class=\"gap-30\"></div>\n  \t<div class=\"container\">\n  \t\t<div class=\"col-md-12\">\n  \t\t\t<p>Copyright ©2000-2021 InfoLight System Corp. Ltd.<br>訊光科技系統股份有限公司版權所有</p>\n  \t\t\t<p>網站許可證編號：滬ICP備150</p>\n  \t\t</div>\n  \t</div>\n  <div class=\"gap-30\"></div><div class=\"gap-30\"></div>\n  </div>\n\n",
+        "type": "literal"
+      }
+    ]
+  },
+  {
+    "id": "about",
+    "title": "聯絡我們",
+    "collapsed": false,
+    "hidden": true,
+    "background": "",
+    "type": "panel",
+    "childrens": [
+      {
+        "id": "Literal7",
+        "html": "<div id=\"Image2\" class=\"img-responsive banner-img bootstrap-image shadow text-center margin-0\" style=\"background-image:url( '../file/images?q=banner8.jpg' );\">\n    <h1 class=\"banner-h1\">聯絡我們</h1>\n  \t<p class=\"banner-p\">CONTACT US</p>\n</div>\n<script>\n  $(function(){\n    setTimeout(function(){\n      window.top.document.title = '訊光資訊';\n    },1);\n  })\n</script>",
+        "type": "literal"
+      },
+      {
+        "id": "SiteMap3",
+        "alignment": "right",
+        "iconCls": "glyphicon-home",
+        "items": [
+          {
+            "caption": "首頁",
+            "url": "#body",
+            "bindingObject": "body"
+          },
+          {
+            "caption": "聯絡我們",
+            "url": "",
+            "bindingObject": ""
+          }
+        ],
+        "type": "breadcrumb"
+      },
+      {
+        "id": "Literal2",
+        "html": "<style>\n.about_top .tab_01_title {\n    font-size: 28px;\n    color: #004EA2;\n}\n  \n.text-left {\n    text-align:left;\n}\n  \n.fiximg {\n    width:100%;\n  \theight:auto;\n}\n  \n.pd {\n    padding:50px 50px;\n}\n  \n.contact-span {\n    font-size:18px !important;\n}  \n  \n@media (max-width: 768px) {  \n.pd {\n    padding:20px 20px;\n}\n}  \n  \n</style>\n<script>function open_window(full_link)\n{ \n    window.open('javascript:window.name;','<script>location.replace(\"'+full_link+'\")<\\/script>');\n}</script>\n\n<link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\">\n<div class=\"page-about main\">\n    <div class=\"container content\">\n        <div class=\"row\">\n            <div class=\"col-sm-12 about_top\">\n                <div class=\"row\">\n                    <div class=\"col-xs-6\">\n                        <p class=\"tab_01_title\">聯絡我們</p>\n                    </div>\n                </div>\n              <span style=\"font-family: 新細明體\"><p>\n                <br style=\"color: rgb(48, 48, 48); font-family: &quot;Microsoft JhengHei&quot;, &quot;PingFang TC&quot;; letter-spacing: 1.6px; white-space: normal; background-color: rgb(217, 237, 247);\"/><a class=\"myButton\" style=\"background: linear-gradient(rgb(45, 171, 249) 5%, rgb(6, 136, 250) 100%) rgb(45, 171, 249); color: rgb(255, 255, 255); cursor: pointer; box-shadow: rgb(41, 187, 255) 0px -3px 7px 0px inset; border-radius: 6px; display: inline-block; font-size: 10px; padding: 10px 20px; text-shadow: rgb(38, 54, 102) 0px 1px 0px; font-family: &quot;Microsoft JhengHei&quot;, &quot;PingFang TC&quot;; letter-spacing: 1.6px; white-space: normal;\" onclick=\"open_window('https://bak.infolight.com/new/forms/Intention.html')\">產品咨詢</a>&nbsp; &nbsp; &nbsp; &nbsp;\n            </p></span>\n                <hr>\n                <div class=\"row fuwu\">\n                    <div class=\"col-md-6 col-xs-12\">\n                         <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.3279198447963!2d121.51057811498832!3d25.056872443528174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a914de2f5897%3A0x771c0d1151695c4e!2z6KiK5YWJ56eR5oqA57O757Wx6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1602657123111!5m2!1szh-TW!2stw\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>                       \n                    </div>\n                    <div class=\"col-md-6 hexin text-left\">\n                        <div class=\"pd\">\n                          <h3>訊光科技總公司</h3>\n                          <hr>\n                          <span class=\"contact-span\">\n                              <i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;臺北市大同區民生西路 290 號 8 樓<br><br>\n                              <i class=\"fa fa-phone\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;電話：886-2-2556-6159<br><br>\n                              <i class=\"fa fa-fax\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;傳真：886-2-2556-9425<br><br>\n                              <i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;E-mail：infolight@infolight.com\n                          </span>\n                        </div>\n                    </div>\n                </div>\n              <div class=\"gap-30\"></div><div class=\"gap-30\"></div>\n                <div class=\"row fuwu\">\n                    <div class=\"col-md-6\">\n                         <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d852.8046853689265!2d121.31983792920114!3d31.242367398841395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b266257bb1f409%3A0xae09efb2c0ad6b78!2z5Lit5ZyL5LiK5rW35biC5ZiJ5a6a5Yy66YeR6L-Q6Lev!5e0!3m2!1szh-TW!2stw!4v1629706713333!5m2!1szh-TW!2stw\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>\n                    </div>\n                    <div class=\"col-md-6 hexin text-left\">\n                      \t<div class=\"pd\">\n                          <h3>上海訊光</h3>\n                          <hr>\n                          <span class=\"contact-span\">\n                              <i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;上海市嘉定區金運路355號16號樓3層(華泰中心)<br><br>\n                              <i class=\"fa fa-user\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;聯絡人：陳小慶<br><br>\n                              <i class=\"fa fa-phone\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;電話：86-21-6225-1720<br><br>\n                              <i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>&nbsp;&nbsp;&nbsp;E-mail：michelle8172@163.com<br><br>\n                              <i class=\"fa fa-home\" aria-hidden=\"true\"></i>&nbsp;&nbsp;上海官網：<a href=\"http://www.eepicoder.cn\" target=\"_blank\">http://www.eepicoder.cn</a>\n                          </span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>",
+        "type": "literal"
+      }
+    ]
+  },
+  {
+    "id": "help",
+    "title": "線上手冊",
+    "collapsed": false,
+    "hidden": true,
+    "background": "",
+    "type": "panel",
+    "childrens": [
+      {
+        "id": "Literal8",
+        "html": "<div id=\"Image2\" class=\"img-responsive banner-img bootstrap-image shadow text-center margin-0\" style=\"background-image:url( '../file/images?q=banner16.jpg' );\">\n    <h1 class=\"banner-h1\">線上手冊</h1>\n  \t<p class=\"banner-p\">EEPHELP</p>\n</div>\n<script>\n  $(function(){\n    setTimeout(function(){\n      window.top.document.title = '訊光線上手冊';\n    },1);\n  })\n</script>",
+        "type": "literal"
+      },
+      {
+        "id": "SiteMap2",
+        "alignment": "right",
+        "iconCls": "glyphicon-home",
+        "items": [
+          {
+            "caption": "首頁",
+            "url": "#body",
+            "bindingObject": "body"
+          },
+          {
+            "caption": "線上手冊",
+            "url": "#help",
+            "bindingObject": ""
+          }
+        ],
+        "type": "breadcrumb"
+      },
+      {
+        "id": "ImageList1",
+        "remoteName": "線上手冊.線上手冊顯示",
+        "pageSize": 12,
+        "pagination": false,
+        "imageFolder": "Images",
+        "imageField": "圖示",
+        "captionField": "項目",
+        "urlField": "連結",
+        "bindingObject": "",
+        "images": [],
+        "horizontalColumnsCount": 5,
+        "containerCls": "container",
+        "style": "shadow",
+        "textFormatter": "",
+        "onClick": "",
+        "type": "imagelist"
+      }
+    ]
+  },
+  {
+    "id": "profile",
+    "title": "關於訊光",
+    "collapsed": false,
+    "hidden": true,
+    "background": "",
+    "type": "panel",
+    "childrens": [
+      {
+        "id": "Literal9",
+        "html": "<div id=\"Image2\" class=\"img-responsive banner-img bootstrap-image shadow text-center margin-0\" style=\"background-image:url( '../file/images?q=banner9.jpg' );\">\n    <h1 class=\"banner-h1\">關於訊光</h1>\n  \t<p class=\"banner-p\">ABOUT US</p>\n</div>\n<script>\n  $(function(){\n    setTimeout(function(){\n      window.top.document.title = '關於訊光';\n    },1);\n  })\n</script>",
+        "type": "literal"
+      },
+      {
+        "id": "SiteMap1",
+        "alignment": "right",
+        "iconCls": "glyphicon-home",
+        "items": [
+          {
+            "caption": "首頁",
+            "url": "#body",
+            "bindingObject": "body"
+          },
+          {
+            "caption": "關於訊光",
+            "url": "",
+            "bindingObject": ""
+          }
+        ],
+        "type": "breadcrumb"
+      },
+      {
+        "id": "Literal4",
+        "html": "\n<div class=\"page-about main\">\n    <div class=\"container content\">\n        <div class=\"row\">\n           <div class=\"col-sm-12 about_top\">\n                <div>\n                    <div class=\"row\">\n                        <div class=\"col-xs-6\">\n                            <p class=\"tab_01_title\">公司簡介</p>\n                        </div>\n                    </div>\n                    <hr>\n                    <div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-xs-12 col-sm-5\">\n                        \t<img id=\"Image1\" class=\"fiximg shadow\" src=\"../file/images?q=about01.png\" onclick=\"\">\n                       </div>                      \n                        <div class=\"col-xs-12 col-sm-7\">\n                                                        <p class=\"tab_01_introduction\" style=\"font-size:20px;\">\n                                    訊光科技，一家以研發軟體工程技術為本的公司，致力於高生產力的開發工具長達三十餘年。\n核心技術有RWD UX組件、資料處理組件、工作流程引擎、AI程式碼自動產生、雲端PaaS框架\n等，可應用在.NET(含Core)及Node平台上。<br>\n\n    \n                            </p>\n                            <p class=\"tab_01_introduction\" style=\"font-size:20px;\">\n                                軟體工程一直是業界一大困擾，內有人員培養不易、高流動率、低生產力與品質低落問題；外有新技術不斷推陳出新、同業競爭壓力等；訊光長期累積了軟體工程技術與頂尖團隊，從DOS、WINDOWS、WEB一直到APP，以創新研發與優異技術能力，促進同業軟體工程標準化，讓軟體開發能更快速、更標準更有品質，來大幅降低軟體建置成本與風險。<br>\n                            </p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"gap-30\"></div><div class=\"gap-30\"></div>\n                <div>\n                    <div class=\"row\">\n                        <div class=\"col-xs-6\">\n                            <p class=\"tab_01_title\">競爭核心</p>\n                        </div>\n                    </div>\n                    <hr>\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                            <img src=\"../file/images?q=017-team management.png\" onclick=\"\">\n                            <p>堅強的研發團隊</p>\n                            <span>訊光長期網羅國內頂尖研發人才，為客戶的現在及未來需求提供最佳解決方案。</span>\n                      </div>\n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                            <img src=\"../file/images?q=003-search.png\" onclick=\"\">\n                            <p>專業的工具知識能力</p>\n                            <span>25年十代工具產品的經驗累積，經過數千客戶驗證與考驗，最專業的工具廠商。</span>\n                      </div>\n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                            <img src=\"../file/images?q=030-laptop.png\" onclick=\"\">\n                            <p>貼心的專業服務</p>\n                            <span>完善周到的服務是我們的承諾，我們就是客戶的研發部門為宗旨，堅持好還要更好。</span>\n                      </div> \n                      <div class=\"gap-30 hidden-xs\"></div>\n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                          <img src=\"../file/images?q=041-coding.png\" onclick=\"\">\n                          <p>開放的原始碼</p>\n                            <span>提供所有必要性的原始程式碼，讓客戶能繼承與再用我們的研發成果。</span>\n                      </div> \n                        <div class=\"col-xs-12 col-sm-4 hexin\">\n                            <img src=\"../file/images?q=029-balance.png\" onclick=\"\">\n                            <p>提供最佳性價比</p>\n                            <span>從人員培訓到技術移轉，從提供現成應用模組到委託專案開發，以最低價格得到最大效益。</span>\n                        </div>                       \n                    </div>\n                </div>\n                <div class=\"gap-30\"></div><div class=\"gap-30\"></div>\n                <div>\n                    <div class=\"row\">\n                        <div class=\"col-xs-6\">\n                            <p class=\"tab_01_title\">經營理念</p>\n                        </div>\n                    </div>\n                    <hr>\n                    <div class=\"row\">\n                        <div class=\"col-sm-12\">\n                            <p class=\"tab_01_introduction\">\n                                不管是套裝軟體、委外設計或自行開發，「穩定且低成本的完整解決方案」是客戶共同最終的期待，\n                                要達到此目標的關鍵因素除了要有技術(穩定)標準開發流程(成本低)、相關產業經驗的開發廠商或顧問(完整知識)才能達到。\n                                訊光以優異的技術及標準化之開發流程來協助客戶創造價值，由於長期在技術上耕耘而累積數十年的平臺經驗，進而研發出穩定的\n                                工具及開發平臺，以元件化技術來規範開發人員的標準化作業，進而縮短時程降低成本，再透過雲端的新技術整合現成的產業相關知\n                                識與範例，讓應用軟體的開發可以更快、更穩定、更低成本、更加完整，來滿足客戶的最終期望。<br>\n                            </p>\n                            <p class=\"tab_01_introduction\">\n                                應用軟體產業長期以來便是相當難經營的產業，不僅服務對象需求多樣化，\n                                且技術日新月異，往往投資發展的軟體需要幾年的開發，產品上市之後便須面對術轉變重新昇級，不然就是被專案不斷的拖延與追趕，\n                                對於客戶的承諾往往無法履行，常常造成以往客戶必須被迫承受低品質的軟體產品，讓這個產業大都只能維持生存很難持續獲利。\n                                至於企業的IT部門也常常面臨技術的更新而無法汰換老舊系統的困窘，尤其是面臨來自高層時程壓力與需求不斷改變，都該參與其中IT人\n                                員顯得非常無奈。\n                            </p>\n                            <p class=\"tab_01_introduction\">\n                                因此，訊光科技除了研究獨特的開發平臺外，並且發展先進的雲端平臺來\n                                提供客戶更多的解決方案與行業別應用案例，讓客戶都能快速開發自己的專屬應用系統，讓系統維護的成本及風險降至最低。軟體開發\n                                最重要的就是如期，如質，如預算，，透過雲端開發平臺的發展，終讓軟體開發可以不受時間、空間(地域)的限制，規格可以更容易畫\n                                清楚，設計人員可以看得更清楚，更快的交期與更低的成本，更容易外包與比價，更易掌握進度與維護、管理等，相信雲端的演進將成為\n                                軟體專案開發上的一大福音。\n                            </p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"gap-30\"></div><div class=\"gap-30\"></div>\n                <div>\n                    <div class=\"row\">\n                        <div class=\"col-xs-6\">\n                            <p class=\"tab_01_title\">服務特色</p>\n                        </div>\n                    </div>\n                    <hr>\n                  \n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-sm-3 hexin\">\n                            <img class=\"img-responsive bootstrap-image shadow\" src=\"../file/images?q=ee1.jpg\" onclick=\"\">\n                            <p class=\"\">產品系列</p>\n                            <span>供EEP/Workflow/EEPCloud等開發平臺，並有現成的中小型套裝軟模組可供引用。</span>  \n                      </div>\n                        <div class=\"col-xs-12 col-sm-3 hexin\">\n                          <img class=\"img-responsive bootstrap-image shadow\" src=\"../file/images?q=ee2.jpg\" onclick=\"\">\n                            <p class=\"\">教育訓練</p>\n                            <span>提供EEP/Workflow/EEPCloud等系列之教育訓練與到府輔導上線。</span>\n                      </div>\n                        <div class=\"col-xs-12 col-sm-3 hexin\">\n                          <img class=\"img-responsive bootstrap-image shadow\" src=\"../file/images?q=ee3.jpg\" onclick=\"\">\n                            <p class=\"\">技術移轉</p>\n                            <span>提供完整技術文件與原始碼與到府輔導，強化技術移轉的效果。</span>\n                      </div> \n                        <div class=\"col-xs-12 col-sm-3 hexin\">\n                          <img class=\"img-responsive bootstrap-image shadow\" src=\"../file/images?q=ee4.jpg\" onclick=\"\">\n                            <p class=\"\">協同開發</p>\n                            <span>提供系統分析、系統設計、程式開發、客製元件等服務，協助客戶共同開發專屬平台。</span>\n                      </div>                       \n                    </div>                                    \n                </div>\n            </div>\n        </div>\n    </div>\n</div>",
+        "type": "literal"
+      }
+    ]
+  },
+  {
+    "id": "qa",
+    "title": "常見問答",
+    "collapsed": false,
+    "hidden": true,
+    "background": "",
+    "type": "panel",
+    "childrens": [
+      {
+        "id": "Layout3",
+        "columns": [
+          {
+            "columnCls": "col-xs-12",
+            "childrens": [
+              {
+                "id": "Literal10",
+                "html": "<div id=\"Image2\" class=\"img-responsive banner-img bootstrap-image shadow text-center margin-0\" style=\"background-image:url( '../file/images?q=banner15.jpg' );\">\n    <h1 class=\"banner-h1\">常見問答</h1>\n  \t<p class=\"banner-p\">Q&A</p>\n</div>\n<script>\n  $(function(){\n    setTimeout(function(){\n      window.top.document.title = '訊光常見問答';\n    },1);\n  })\n</script>",
+                "type": "literal"
+              },
+              {
+                "id": "SiteMap3",
+                "alignment": "right",
+                "iconCls": "glyphicon-home",
+                "items": [
+                  {
+                    "caption": "首頁",
+                    "url": "#body",
+                    "bindingObject": "body"
+                  },
+                  {
+                    "caption": "常見問答",
+                    "url": "#qa",
+                    "bindingObject": "body"
+                  }
+                ],
+                "type": "breadcrumb"
+              },
+              {
+                "id": "Layout1",
+                "columns": [
+                  {
+                    "columnCls": "col-xs-12",
+                    "childrens": [
+                      {
+                        "id": "Literal16",
+                        "html": "<!-- <div style=\"text-align:center\">常見問題/  \n  <a onclick=\"openQA2('001')\" class=\"myButton\">EEP.NET</a>\n  <a onclick=\"openQA2('002')\" class=\"myButton\">Workflow</a>\n  <a onclick=\"openQA2('003')\" class=\"myButton\">RWD & APP 模組</a>\n  <a onclick=\"openQA2('010')\" class=\"myButton\">EEPCloud</a>\n  <a onclick=\"openQA2('011')\" class=\"myButton\">iCoder</a>\n</div> -->\n\n<div style=\"padding-buttom:15px;font-size:16px; position:center;font-weight:bold;\"> 公司產品：\n<select class=\"selector\" style=\"width:auto\" onchange=\"openQA2(this.value)\">\n    <option value=\"常見問題\" selected=\"selected\" style=\"font-weight:bold\">請選擇產品</option> \n    <option value=\"001\" style=\"font-weight:bold\">EEP.NET</option>\n    <option value=\"002\" style=\"font-weight:bold\">Workflow</option>\n    <option value=\"003\" style=\"font-weight:bold\">RWD & APP 模組</option>\n    <option value=\"010\" style=\"font-weight:bold\">EEPCloud</option>\n    <option value=\"011\" style=\"font-weight:bold\">iCoder</option>\n</select></div><br>\n\n",
+                        "type": "literal"
+                      }
+                    ]
+                  }
+                ],
+                "containerCls": "container",
+                "type": "layout"
+              },
+              {
+                "id": "Layout4",
+                "columns": [
+                  {
+                    "columnCls": "col-xs-12 col-sm-3",
+                    "childrens": [
+                      {
+                        "id": "DataList1",
+                        "remoteName": "常見問答.常見問答",
+                        "whereStr": "",
+                        "columns": [
+                          {
+                            "field": "類別",
+                            "columnCls": "col-xs-12",
+                            "formatter": ""
+                          }
+                        ],
+                        "listCls": "col-xs-12",
+                        "validateXss": true,
+                        "viewCommandVisible": false,
+                        "editCommandVisible": false,
+                        "deleteCommandVisible": false,
+                        "editForm": "",
+                        "pagination": true,
+                        "pageSize": 20,
+                        "rows": "",
+                        "title": "問答類別",
+                        "bordered": false,
+                        "showEmptyColumn": false,
+                        "onBeforeLoad": "DataList1_onBeforeLoad",
+                        "onLoad": "",
+                        "loadFilter": "",
+                        "onSelect": "DataList1_onSelect",
+                        "onUpdate": "",
+                        "onDelete": "",
+                        "type": "datalist"
+                      }
+                    ]
+                  },
+                  {
+                    "columnCls": "col-xs-12 col-sm-9",
+                    "childrens": [
+                      {
+                        "id": "DataList2",
+                        "remoteName": "常見問答.常見問答明細",
+                        "whereStr": "",
+                        "columns": [
+                          {
+                            "field": "標題",
+                            "columnCls": "col-xs-12",
+                            "formatter": "DataList2_標題_formatter"
+                          },
+                          {
+                            "field": "回答",
+                            "columnCls": "col-xs-12",
+                            "formatter": "DataList2_回答_formatter"
+                          }
+                        ],
+                        "listCls": "col-xs-12",
+                        "validateXss": true,
+                        "viewCommandVisible": false,
+                        "editCommandVisible": false,
+                        "deleteCommandVisible": false,
+                        "editForm": "",
+                        "pagination": true,
+                        "pageSize": 200,
+                        "rows": "",
+                        "title": "",
+                        "bordered": false,
+                        "showEmptyColumn": false,
+                        "onBeforeLoad": "DataList2_onBeforeLoad",
+                        "onLoad": "",
+                        "loadFilter": "",
+                        "onSelect": "",
+                        "onUpdate": "",
+                        "onDelete": "",
+                        "type": "datalist"
+                      }
+                    ]
+                  }
+                ],
+                "containerCls": "container",
+                "type": "layout"
+              },
+              {
+                "id": "Literal5",
+                "html": "<style>\n #DataList1 {\n  \t border: 1px solid #d2d2d2;\n    padding: 5px;\n  }\n\n  #DataList1 .list-item\n  {\n  \t margin: 5px 0;\n    list-style-type: none;\n    line-height: 44px;\n    background-color: #EEEEEE;\n    color: #666666;\n    font-size: 18px;\n    text-align: center;\n    cursor: pointer;\n  }\n  \n   #DataList1 .list-item.active,\n   #DataList1 .list-item:hover\n   \n  {\n  \t color: #FFFFFF;\n    background-color: #999;\n  }\n  \n    #DataList2 .list-item\n  {\n  \t margin: 3px 0;\n    list-style-type: none;\n    background-color: #e6e6e6;\n    color: #666666;\n    font-size: 16px;\n    text-align: center;\n    cursor: pointer;\n    height: 100;\n  }\n\n    #Layout4 .datagrid-title {\n    width: 100%;\n    line-height: 50px;\n    background-color: rgba(238, 123, 87, 0.9);\n    font-size: 22px;\n    color: white;\n    letter-spacing: 0.5em;\n    text-indent: 0.5em;\n    text-align: center;\n   }\n  \n .answer_Q {\n    margin: 15px 0;\n    font-size: 20px;\n    font-weight:600;\n    color: rgb(0, 78, 162);\n    display: inline;\n    text-align: left;\n\n}\n\n.answer_A {\n    display: block;\n    margin: 0 auto 10px;\n    padding: 6px 12px;\n    font-size: 16px;\n    color: #000000;\n    line-height: 1.6;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    background-color: #efefef;\n    text-align: left;\n    word-wrap: break-word;\n}\n\n </style>\n",
+                "type": "literal"
+              }
+            ]
+          }
+        ],
+        "containerCls": "container-fluid",
+        "type": "layout"
+      }
+    ]
+  },
+  {
+    "id": "download",
+    "title": "檔案下載",
+    "collapsed": false,
+    "hidden": true,
+    "background": "",
+    "type": "panel",
+    "childrens": [
+      {
+        "id": "Layout5",
+        "columns": [
+          {
+            "columnCls": "col-xs-12",
+            "childrens": [
+              {
+                "id": "Literal11",
+                "html": "<div id=\"Image2\" class=\"img-responsive banner-img bootstrap-image shadow text-center margin-0\" style=\"background-image:url( '../file/images?q=banner12.jpg' );\">\n    <h1 class=\"banner-h1\">檔案下載</h1>\n  \t<p class=\"banner-p\">DOWNLOADS</p>\n</div>\n<script>\n  $(function(){\n    setTimeout(function(){\n      window.top.document.title = '訊光檔案';\n    },1);\n  })\n</script>",
+                "type": "literal"
+              },
+              {
+                "id": "Literal6",
+                "html": "<style>\n  \n  #DataList3 {\n  \t border: 1px solid #d2d2d2;\n    padding: 5px;\n  }\n\n  #DataList3 .list-item\n  {\n  \t margin: 5px 0;\n    list-style-type: none;\n    line-height: 44px;\n    background-color: #EEEEEE;\n    color: #666666;\n    font-size: 18px;\n    text-align: center;\n    cursor: pointer;\n  }\n  \n   #DataList3 .list-item.active,\n   #DataList3 .list-item:hover\n  {\n  \t color: #FFFFFF;\n    background-color: #999;\n  }\n\n    #Layout6 .datagrid-title {\n    width: 100%;\n    line-height: 50px;\n    background-color: rgba(238, 123, 87, 0.9);\n    font-size: 22px;\n    color: white;\n    letter-spacing: 0.5em;\n    text-indent: 0.5em;\n    text-align: center;\n   }\n    \n </style>\n",
+                "type": "literal"
+              },
+              {
+                "id": "SiteMap4",
+                "alignment": "right",
+                "iconCls": "glyphicon-home",
+                "items": [
+                  {
+                    "caption": "首頁",
+                    "url": "#body",
+                    "bindingObject": "body"
+                  },
+                  {
+                    "caption": "檔案下載",
+                    "url": "#download",
+                    "bindingObject": "body"
+                  }
+                ],
+                "type": "breadcrumb"
+              },
+              {
+                "id": "Layout6",
+                "columns": [
+                  {
+                    "columnCls": "col-xs-12 col-sm-3",
+                    "childrens": [
+                      {
+                        "id": "DataList3",
+                        "remoteName": "下載專區.ref_公司產品",
+                        "whereStr": "",
+                        "columns": [
+                          {
+                            "field": "產品名稱",
+                            "columnCls": "col-xs-12",
+                            "formatter": ""
+                          }
+                        ],
+                        "listCls": "col-xs-12",
+                        "validateXss": true,
+                        "viewCommandVisible": false,
+                        "editCommandVisible": false,
+                        "deleteCommandVisible": false,
+                        "editForm": "",
+                        "pagination": true,
+                        "pageSize": 20,
+                        "rows": "",
+                        "title": "下載類別",
+                        "bordered": false,
+                        "showEmptyColumn": false,
+                        "onBeforeLoad": "",
+                        "onLoad": "",
+                        "loadFilter": "",
+                        "onSelect": "DataList3_onSelect",
+                        "onUpdate": "",
+                        "onDelete": "",
+                        "type": "datalist"
+                      }
+                    ]
+                  },
+                  {
+                    "columnCls": "col-xs-12 col-sm-9",
+                    "childrens": [
+                      {
+                        "id": "DataGrid2",
+                        "remoteName": "下載專區.下載專區顯示",
+                        "columns": [
+                          {
+                            "title": "項目",
+                            "field": "項目",
+                            "alignment": "",
+                            "nowrap": false,
+                            "hidden": false,
+                            "sortable": false,
+                            "total": "none",
+                            "showxs": true,
+                            "showsm": true,
+                            "format": "",
+                            "formatter": "DataGrid2_項目_formatter",
+                            "editor": {
+                              "type": "textbox"
+                            },
+                            "relation": {},
+                            "isMerge": true,
+                            "width": 33
+                          },
+                          {
+                            "title": "說明",
+                            "field": "說明",
+                            "alignment": "",
+                            "nowrap": false,
+                            "hidden": false,
+                            "sortable": false,
+                            "total": "none",
+                            "showxs": true,
+                            "showsm": true,
+                            "format": "",
+                            "formatter": "",
+                            "editor": {
+                              "type": "textbox"
+                            },
+                            "relation": {},
+                            "isMerge": true,
+                            "width": 33
+                          },
+                          {
+                            "title": "日期",
+                            "field": "日期",
+                            "alignment": "",
+                            "nowrap": false,
+                            "hidden": false,
+                            "sortable": false,
+                            "total": "none",
+                            "showxs": true,
+                            "showsm": true,
+                            "format": "yyyy/MM/dd",
+                            "formatter": "",
+                            "editor": {
+                              "type": "textbox"
+                            },
+                            "relation": {},
+                            "isMerge": true,
+                            "width": 33
+                          }
+                        ],
+                        "whereStr": "類別='001'",
+                        "autoApply": true,
+                        "validateXss": true,
+                        "confirmDelete": true,
+                        "duplicateCheck": true,
+                        "editOnEnter": false,
+                        "toolItems": [],
+                        "toolItemPosition": "top",
+                        "viewCommandVisible": false,
+                        "editCommandVisible": false,
+                        "deleteCommandVisible": false,
+                        "columnHidable": false,
+                        "editForm": "",
+                        "parentObject": "",
+                        "targetObject": "",
+                        "targetDataGrid": "",
+                        "whereItems": [],
+                        "totalMode": "page",
+                        "showColumnTitle": true,
+                        "autoQueryColumn": false,
+                        "queryColumns": [],
+                        "queryMode": "dialog",
+                        "queryTitle": "Query",
+                        "queryColumnsCount": 2,
+                        "showCheckbox": false,
+                        "checkOnSelect": false,
+                        "recordLock": false,
+                        "pagination": true,
+                        "rownumbers": false,
+                        "reportName": "",
+                        "pageSize": 10,
+                        "title": "",
+                        "height": "",
+                        "rowStyler": "",
+                        "onBeforeLoad": "",
+                        "onLoad": "",
+                        "onSelect": "",
+                        "onInsert": "",
+                        "onUpdate": "",
+                        "onDelete": "",
+                        "onDeleted": "",
+                        "onQuery": "",
+                        "onImportExcelSuccess": "",
+                        "onShowEditor": "",
+                        "onEndEdit": "",
+                        "onTotal": "",
+                        "bordered": true,
+                        "hover": true,
+                        "striped": false,
+                        "condensed": false,
+                        "xsblock": true,
+                        "simple": false,
+                        "type": "datagrid"
+                      },
+                      {
+                        "id": "Counter2",
+                        "remoteName": "下載專區.下載專區",
+                        "keyField": "編號",
+                        "counterField": "下載次數",
+                        "formatter": "",
+                        "type": "counter"
+                      }
+                    ]
+                  }
+                ],
+                "containerCls": "container",
+                "type": "layout"
+              }
+            ]
+          }
+        ],
+        "containerCls": "container-fluid",
+        "type": "layout"
+      }
+    ]
+  }
+]
