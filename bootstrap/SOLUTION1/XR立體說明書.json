@@ -1,0 +1,209 @@
+[
+  {
+    "id": "dgMaster",
+    "remoteName": "XR立體說明書.XR立體說明書",
+    "columns": [
+      {
+        "field": "專案代號",
+        "title": "專案代號",
+        "alignment": "left",
+        "format": "",
+        "hidden": false,
+        "showxs": true,
+        "total": "",
+        "relation": null,
+        "isMerge": false,
+        "width": 57
+      },
+      {
+        "field": "專案名稱",
+        "title": "專案名稱",
+        "alignment": "left",
+        "format": "",
+        "hidden": false,
+        "showxs": true,
+        "total": "",
+        "relation": null,
+        "isMerge": false,
+        "width": 57
+      },
+      {
+        "field": "建立者",
+        "title": "建立者",
+        "alignment": "left",
+        "format": "",
+        "hidden": false,
+        "showxs": false,
+        "total": "",
+        "relation": null,
+        "isMerge": false,
+        "width": 45
+      },
+      {
+        "field": "建立時間",
+        "title": "建立時間",
+        "alignment": "left",
+        "format": "yyyy/MM/dd hh:mm:ss",
+        "hidden": false,
+        "showxs": false,
+        "total": "",
+        "relation": null,
+        "isMerge": false,
+        "width": 57
+      }
+    ],
+    "whereStr": "",
+    "autoApply": true,
+    "validateXss": false,
+    "confirmDelete": true,
+    "duplicateCheck": true,
+    "editOnEnter": true,
+    "toolItems": [
+      {
+        "text": "Add",
+        "helpText": "",
+        "iconCls": "glyphicon-plus",
+        "iconAlign": "left",
+        "btnCls": "btn-default",
+        "hidden": false,
+        "onclick": "insertXR"
+      },
+      {
+        "text": "Query",
+        "helpText": "",
+        "iconCls": "glyphicon-search",
+        "iconAlign": "left",
+        "btnCls": "btn-default",
+        "hidden": false,
+        "onclick": "openQuery"
+      },
+      {
+        "text": "Print",
+        "helpText": "",
+        "iconCls": "glyphicon-export",
+        "iconAlign": "left",
+        "btnCls": "btn-default",
+        "hidden": false,
+        "onclick": "exportWord"
+      }
+    ],
+    "toolItemPosition": "top",
+    "viewCommandVisible": false,
+    "editCommandVisible": true,
+    "deleteCommandVisible": true,
+    "columnHidable": false,
+    "editForm": "dfMaster",
+    "parentObject": "",
+    "targetObject": "",
+    "targetDataGrid": "",
+    "whereItems": [],
+    "totalMode": "page",
+    "showColumnTitle": true,
+    "autoQueryColumn": true,
+    "queryColumns": [
+      {
+        "title": "專案代號",
+        "field": "專案代號",
+        "newRow": false,
+        "span": 1,
+        "operator": "%%",
+        "editor": {
+          "type": "textbox",
+          "maxLength": 20,
+          "readonly": false,
+          "field": "專案代號"
+        },
+        "defaultValue": ""
+      },
+      {
+        "title": "專案名稱",
+        "field": "專案名稱",
+        "newRow": false,
+        "span": 1,
+        "operator": "%%",
+        "editor": {
+          "type": "textbox",
+          "width": 120
+        },
+        "defaultValue": ""
+      }
+    ],
+    "queryMode": "dialog",
+    "queryTitle": "XR立體說明書查詢",
+    "queryColumnsCount": 2,
+    "showCheckbox": false,
+    "checkOnSelect": false,
+    "recordLock": false,
+    "pagination": true,
+    "rownumbers": false,
+    "reportName": "",
+    "pageSize": 10,
+    "title": "XR立體說明書",
+    "height": "",
+    "rowStyler": "",
+    "onBeforeLoad": "",
+    "onLoad": "",
+    "onLoadError": "",
+    "onSelect": "dgMaster_onSelect",
+    "onInsert": "",
+    "onUpdate": "dgMaster_onUpdate",
+    "onDelete": "",
+    "onDeleted": "",
+    "onQuery": "",
+    "onImportExcelSuccess": "",
+    "onShowEditor": "",
+    "onEndEdit": "",
+    "onTotal": "",
+    "bordered": true,
+    "hover": true,
+    "striped": true,
+    "condensed": true,
+    "xsblock": true,
+    "simple": false,
+    "type": "datagrid"
+  },
+  {
+    "id": "deMaster",
+    "bindingObject": "dfMaster",
+    "columns": [
+      {
+        "field": "建立時間",
+        "title": "建立時間",
+        "defaultValue": "varaible['today']"
+      }
+    ],
+    "type": "default"
+  },
+  {
+    "id": "vaMaster",
+    "bindingObject": "dfMaster",
+    "columns": [
+      {
+        "field": "專案代號",
+        "title": "專案代號",
+        "required": true,
+        "validType": ""
+      }
+    ],
+    "type": "validate"
+  },
+  {
+    "id": "vaDetail",
+    "bindingObject": "dgDetail",
+    "columns": [
+      {
+        "field": "專案代號",
+        "title": "專案代號",
+        "required": true,
+        "validType": ""
+      },
+      {
+        "field": "LINEID",
+        "title": "LINEID",
+        "required": true,
+        "validType": ""
+      }
+    ],
+    "type": "validate"
+  }
+]
