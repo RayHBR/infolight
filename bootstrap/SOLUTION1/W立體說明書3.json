@@ -1,0 +1,141 @@
+[
+  {
+    "id": "Literal1",
+    "html": "<div id=\"test\" ondragover=\"del_dragover(event);\" ondrop=\"del_list_drop(event);\">",
+    "type": "literal"
+  },
+  {
+    "id": "空白",
+    "html": "<br>\n<!--<div class=\"form-editor datagrid-toolitem\">\n  <button id=\"closeLeft\" type=\"button\" class=\"btn btn-sm datagrid-btn\" onclick=\"closeLeft()\">\n    <span class=\"glyphicon glyphicon-chevron-left\"></span>\n  </button>\n  <button id=\"openLeft\" type=\"button\" class=\"btn btn-sm datagrid-btn\" onclick=\"openLeft()\">\n    <span class=\"glyphicon glyphicon-chevron-right\"></span>\n  </button>\n  <button id=\"save1\" type=\"button\" class=\"btn btn-sm datagrid-btn\" style=\"float:right;\" onclick=\"save()\">\n    <span class=\"glyphicon glyphicon-floppy-disk\"></span>\n    <span class=\"btn-text\">存檔</span>\n  </button>\n</div>-->",
+    "type": "literal"
+  },
+  {
+    "id": "Layout1",
+    "columns": [
+      {
+        "columnCls": "col-xs-4 col-sm-3",
+        "childrens": [
+          {
+            "id": "設備列表",
+            "html": "<form class=\"form-horizontal\" role=\"form\" autocomplete=\"off\">\n  <div class=\"form-group\">\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_專案代號\" class=\"col-sm-3 control-label form-field\" data-options=\"field:'專案代號',title:'專案代號'\">專案代號</label>\n    </div>\n    <div class=\"form-editor col-sm-7\">\n      <input class=\"form-control\" id=\"dgMasterqueryObj_專案代號\" name=\"專案代號\" type=\"text\" placeholder=\"\" maxlength=\"20\" data-options=\"maxLength:20,readonly:false,field:'專案代號'\">\n    </div>\n  </div>\n  <div class=\"form-group\">\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_專案名稱\" class=\"col-sm-3 control-label form-field\" data-options=\"field:'專案名稱',title:'專案名稱'\">專案名稱</label>\n    </div>\n    <div class=\"form-editor col-sm-7\">\n      <input class=\"form-control\" id=\"dgMasterqueryObj_專案名稱\" name=\"專案名稱\" type=\"text\" placeholder=\"\" maxlength=\"20\" data-options=\"maxLength:20,readonly:false,field:'專案名稱'\">\n    </div>\n  </div>\n</form>\n<br>\n<div style=\"padding-buttom:15px;font-size:16px;position:center;font-weight:bold;\"> \n  設備類別：\n  <select id=\"EQ\" class=\"selector\" style=\"width:auto\" onchange=\"openEQ(this.value)\">\n    <option value=\"0\" selected=\"selected\" style=\"font-weight:bold\">請選擇類別</option>\n    <option value=\"1\" style=\"font-weight:bold\">送板機</option>\n    <option value=\"2\" style=\"font-weight:bold\">軌道</option>\n    <option value=\"3\" style=\"font-weight:bold\">印刷機</option>\n    <option value=\"4\" style=\"font-weight:bold\">點膠機</option>\n    <option value=\"5\" style=\"font-weight:bold\">SPI</option>\n    <option value=\"6\" style=\"font-weight:bold\">實裝機</option>\n    <option value=\"7\" style=\"font-weight:bold\">AOI</option>\n    <option value=\"8\" style=\"font-weight:bold\">Reflow</option>\n  </select>\n  </div>\n<br>\n\n\n",
+            "type": "literal"
+          },
+          {
+            "id": "dlTitle",
+            "remoteName": "W立體說明書.設備類別量",
+            "whereStr": "",
+            "columns": [
+              {
+                "field": "型號",
+                "columnCls": "col-xs-4",
+                "formatter": "DataList2_型號_formatter"
+              },
+              {
+                "field": "圖片",
+                "columnCls": "col-xs-4",
+                "formatter": "DataList2_圖片_formatter"
+              }
+            ],
+            "listCls": "col-xs-12",
+            "validateXss": true,
+            "viewCommandVisible": false,
+            "editCommandVisible": false,
+            "deleteCommandVisible": false,
+            "editForm": "",
+            "pagination": true,
+            "pageSize": 20,
+            "rows": "",
+            "title": "",
+            "bordered": true,
+            "showEmptyColumn": false,
+            "onBeforeLoad": "",
+            "onLoad": "dlTitle_onLoad",
+            "loadFilter": "",
+            "onSelect": "",
+            "onUpdate": "",
+            "onDelete": "",
+            "type": "datalist"
+          },
+          {
+            "id": "DataList1",
+            "remoteName": "W立體說明書.設備列表",
+            "whereStr": "1=0",
+            "columns": [
+              {
+                "field": "型號",
+                "columnCls": "col-xs-4",
+                "formatter": "DataList1_型號_formatter"
+              },
+              {
+                "field": "圖片",
+                "columnCls": "col-xs-6",
+                "formatter": "DataList1_圖片_formatter"
+              }
+            ],
+            "listCls": "col-xs-12",
+            "validateXss": true,
+            "viewCommandVisible": false,
+            "editCommandVisible": false,
+            "deleteCommandVisible": false,
+            "editForm": "",
+            "pagination": true,
+            "pageSize": 20,
+            "rows": "",
+            "title": "",
+            "bordered": true,
+            "showEmptyColumn": false,
+            "onBeforeLoad": "",
+            "onLoad": "DataList1_onLoad",
+            "loadFilter": "",
+            "onSelect": "",
+            "onUpdate": "",
+            "onDelete": "",
+            "type": "datalist"
+          }
+        ]
+      },
+      {
+        "columnCls": "col-xs-8 col-sm-9",
+        "childrens": [
+          {
+            "id": "Literal3",
+            "html": "<div class=\"form-editor datagrid-toolitem\">\n  <button id=\"closeLeft\" type=\"button\" class=\"btn btn-sm datagrid-btn\" onclick=\"closeLeft()\">\n    <span class=\"glyphicon glyphicon-chevron-left\"></span>\n  </button>\n  <button id=\"openLeft\" type=\"button\" class=\"btn btn-sm datagrid-btn\" onclick=\"openLeft()\">\n    <span class=\"glyphicon glyphicon-chevron-right\"></span>\n  </button>\n  <button id=\"w_save\" type=\"button\" class=\"btn btn-sm datagrid-btn\" onclick=\"save('save')\">\n    <span class=\"glyphicon glyphicon-floppy-disk\"></span>\n    <span class=\"btn-text\">存檔</span>\n  </button>\n  <button id=\"w_upload\" type=\"button\" class=\"btn btn-sm datagrid-btn\" onclick=\"save('upload')\">\n    <span class=\"glyphicon glyphicon-floppy-disk\"></span>\n    <span class=\"btn-text\">上傳</span>\n  </button>\n</div>",
+            "type": "literal"
+          },
+          {
+            "id": "Line1",
+            "html": "<form class=\"form-horizontal\" role=\"form\" autocomplete=\"off\">\n  <div class=\"form-group\">\n    <!--<div class=\"col-sm-2\">\n      <div class=\"form-editor datagrid-toolitem\">\n        <button id=\"closeLeft\" type=\"button\" class=\"btn btn-sm datagrid-btn\" onclick=\"closeLeft()\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </button>\n        <button id=\"openLeft\" type=\"button\" class=\"btn btn-sm datagrid-btn\" onclick=\"openLeft()\">\n          <span class=\"glyphicon glyphicon-chevron-right\"></span>\n        </button>\n        <button id=\"save1\" type=\"button\" class=\"btn btn-sm datagrid-btn\" onclick=\"save()\">\n          <span class=\"glyphicon glyphicon-floppy-disk\"></span>\n          <span class=\"btn-text\">存檔</span>\n      \t</button>\n      </div>\n    </div>-->\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_點數1\" class=\"col-sm-1 control-label form-field\" data-options=\"field:'點數',title:'Line1：點數'\">點數</label>\n    </div>\n    <div class=\"form-editor  col-sm-2\">\n      <input class=\"form-control bootstrap-numberbox\" id=\"dgMasterqueryObj_點數1\" name=\"點數1\" type=\"number\" min=\"1\" max=\"\" placeholder=\"\" style=\"text-align:left\" data-options=\"min:1,max:'',textAlign:'left',format:'',readonly:false\">\n    </div>\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_連板數1\" class=\"col-sm-1 control-label form-field\" data-options=\"field:'連板數',title:'Line1：連板數'\">連板數</label>\n    </div>\n    <div class=\"form-editor  col-sm-2\">\n      <input class=\"form-control bootstrap-numberbox\" id=\"dgMasterqueryObj_連板數1\" name=\"連板數1\" type=\"number\" min=\"1\" max=\"\" placeholder=\"\" style=\"text-align:left\" data-options=\"min:1,max:'',textAlign:'left',format:'',readonly:false\">\n    </div>\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_cycleTime1\" class=\"col-sm-2 control-label form-field\" data-options=\"field:'cycleTime',title:'cycleTime'\">cycleTime:892.22</label>\n    </div>\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_產量1\" class=\"col-sm-2 control-label form-field\" data-options=\"field:'產量',title:'產量'\">產量:892.22</label>\n    </div>\n  </div>\n</form>\n<div class=\"clearfix list-bordered\" id=\"DataList2\" ondragover=\"dragover(event);\" ondragleave=\"dragleave(event);\" ondrop=\"list_drop(event);\" data-options=\"remoteName:'',columns:[{field:'圖片',columnCls:'col-xs-12 col-sm-12'],listCls:'col-xs-12',validateXss:true,viewCommandVisible:false,editCommandVisible:false,deleteCommandVisible:false,editForm:'',pagination:true,pageSize:20,rows:'',title:'',showEmptyColumn:false\">\n<!--<div class=\"bootstrap-datalist clearfix list-bordered\" id=\"DataList2\" ondragover=\"dragover(event);\" ondragleave=\"dragleave(event);\" ondrop=\"list_drop(event);\" data-options=\"remoteName:'',columns:[{field:'圖片',columnCls:'col-xs-12 col-sm-12'],listCls:'col-xs-12',validateXss:true,viewCommandVisible:false,editCommandVisible:false,deleteCommandVisible:false,editForm:'',pagination:true,pageSize:20,rows:'',title:'',showEmptyColumn:false\">-->\n  <div class=\"list-item col-xs-12\">\n    <div class=\"row\">\n      <div class=\"col-xs-12\">\n      </div>\n      <div class=\"col-xs-12\">\n        <br><br><br><br>\n      </div>\n    </div>\n  </div>\n</div>\n<div id=\"line1_tag\">\n  <p style=\"color:red;display:inline-block;\">&nbsp&nbsp&nbsp</p>\n</div>",
+            "type": "literal"
+          },
+          {
+            "id": "Line2",
+            "html": "<br>\n<form class=\"form-horizontal\" role=\"form\" autocomplete=\"off\">\n  <div class=\"form-group\">\n    <!--<div class=\"form-editor col-sm-2\"></div>-->\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_點數2\" class=\"col-sm-1 control-label form-field\" data-options=\"field:'點數',title:'點數'\">點數</label>\n    </div>\n    <div class=\"form-editor  col-sm-2\">\n      <input class=\"form-control bootstrap-numberbox\" id=\"dgMasterqueryObj_點數2\" name=\"點數2\" type=\"number\" min=\"1\" max=\"\" placeholder=\"\" style=\"text-align:left\" data-options=\"min:1,max:'',textAlign:'left',format:'',readonly:false\">\n    </div>\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_連板數2\" class=\"col-sm-1 control-label form-field\" data-options=\"field:'連板數',title:'連板數'\">連板數</label>\n    </div>\n    <div class=\"form-editor  col-sm-2\">\n      <input class=\"form-control bootstrap-numberbox\" id=\"dgMasterqueryObj_連板數2\" name=\"連板數2\" type=\"number\" min=\"1\" max=\"\" placeholder=\"\" style=\"text-align:left\" data-options=\"min:1,max:'',textAlign:'left',format:'',readonly:false\">\n    </div>\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_cycleTime2\" class=\"col-sm-2 control-label form-field\" data-options=\"field:'cycleTime',title:'cycleTime'\">cycleTime:892.22</label>\n    </div>\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_產量2\" class=\"col-sm-2 control-label form-field\" data-options=\"field:'產量',title:'產量'\">產量:892.22</label>\n    </div>\n  </div>\n</form>\n<div class=\"clearfix list-bordered\" id=\"DataList3\" ondragover=\"dragover(event);\" ondragleave=\"dragleave(event);\" ondrop=\"list_drop(event);\" data-options=\"remoteName:'',columns:[{field:'圖片',columnCls:'col-xs-12 col-sm-12'],listCls:'col-xs-12',validateXss:true,viewCommandVisible:false,editCommandVisible:false,deleteCommandVisible:false,editForm:'',pagination:true,pageSize:20,rows:'',title:'',showEmptyColumn:false\">\n<!--<div class=\"bootstrap-datalist clearfix list-bordered\" id=\"DataList3\" ondragover=\"dragover(event);\" ondragleave=\"dragleave(event);\" ondrop=\"list_drop(event);\" data-options=\"remoteName:'',columns:[{field:'圖片',columnCls:'col-xs-12 col-sm-12'],listCls:'col-xs-12',validateXss:true,viewCommandVisible:false,editCommandVisible:false,deleteCommandVisible:false,editForm:'',pagination:true,pageSize:20,rows:'',title:'',showEmptyColumn:false\">-->\n<div class=\"list-item col-xs-12\">\n    <div class=\"row\">\n      <div class=\"col-xs-12\">\n      </div>\n      <div class=\"col-xs-12\">\n        <br><br><br><br>\n      </div>\n    </div>\n  </div>\n</div>\n<div id=\"line2_tag\">\n  <p style=\"color:red;display:inline-block;\">&nbsp&nbsp&nbsp</p>\n</div>",
+            "type": "literal"
+          },
+          {
+            "id": "Line3",
+            "html": "<br>\n<form class=\"form-horizontal\" role=\"form\" autocomplete=\"off\">\n  <div class=\"form-group\">\n    <!--<div class=\"form-editor col-sm-2\"></div>-->\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_點數3\" class=\"col-sm-1 control-label form-field\" data-options=\"field:'點數',title:'點數'\">點數</label>\n    </div>\n    <div class=\"form-editor  col-sm-2\">\n      <input class=\"form-control bootstrap-numberbox\" id=\"dgMasterqueryObj_點數3\" name=\"點數3\" type=\"number\" min=\"1\" max=\"\" placeholder=\"\" style=\"text-align:left\" data-options=\"min:1,max:'',textAlign:'left',format:'',readonly:false\">\n    </div>\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_連板數3\" class=\"col-sm-1 control-label form-field\" data-options=\"field:'連板數',title:'連板數'\">連板數</label>\n    </div>\n    <div class=\"form-editor  col-sm-2\">\n      <input class=\"form-control bootstrap-numberbox\" id=\"dgMasterqueryObj_連板數3\" name=\"連板數3\" type=\"number\" min=\"1\" max=\"\" placeholder=\"\" style=\"text-align:left\" data-options=\"min:1,max:'',textAlign:'left',format:'',readonly:false\">\n    </div>\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_cycleTime3\" class=\"col-sm-2 control-label form-field\" data-options=\"field:'cycleTime',title:'cycleTime'\">cycleTime:892.22</label>\n    </div>\n    <div class=\"\">\n      <label for=\"dgMasterqueryObj_產量3\" class=\"col-sm-2 control-label form-field\" data-options=\"field:'產量',title:'產量'\">產量:892.22</label>\n    </div>\n  </div>\n</form>\n<div class=\"clearfix list-bordered\" id=\"DataList4\" ondragover=\"dragover(event);\" ondragleave=\"dragleave(event);\" ondrop=\"list_drop(event);\" data-options=\"remoteName:'',columns:[{field:'圖片',columnCls:'col-xs-12 col-sm-12'],listCls:'col-xs-12',validateXss:true,viewCommandVisible:false,editCommandVisible:false,deleteCommandVisible:false,editForm:'',pagination:true,pageSize:20,rows:'',title:'',showEmptyColumn:false\">\n<!--<div class=\"bootstrap-datalist clearfix list-bordered\" id=\"DataList4\" ondragover=\"dragover(event);\" ondragleave=\"dragleave(event);\" ondrop=\"list_drop(event);\" data-options=\"remoteName:'',columns:[{field:'圖片',columnCls:'col-xs-12 col-sm-12'],listCls:'col-xs-12',validateXss:true,viewCommandVisible:false,editCommandVisible:false,deleteCommandVisible:false,editForm:'',pagination:true,pageSize:20,rows:'',title:'',showEmptyColumn:false\">-->\n  <div class=\"list-item col-xs-12\">\n    <div class=\"row\">\n      <div class=\"col-xs-12\">\n      </div>\n      <div class=\"col-xs-12\">\n        <br><br><br><br>\n      </div>\n    </div>\n  </div>\n</div>\n<div id=\"line3_tag\">\n  <p style=\"color:red;display:inline-block;\">&nbsp&nbsp&nbsp</p>\n</div>",
+            "type": "literal"
+          }
+        ]
+      }
+    ],
+    "containerCls": "container-fluid",
+    "type": "layout"
+  },
+  {
+    "id": "噴嘴",
+    "html": "<div class=\"bootstrap-form modal fade in\" id=\"dgMasterqueryObj\" data-backdrop=\"static\" role=\"dialog\" aria-labelledby=\"modalLabel\" aria-hidden=\"true\" data-options=\"title:'設備類別查詢',mode:'dialog'\" style=\"display:none;\">\n  <div class=\"modal-dialog \">\n    <div class=\"modal-content\">\n      <div class=\"modal-header bg-primary\">\n        <h4 class=\"modal-title text-default\" id=\"modalLabel\">填寫噴嘴數</h4>\n      </div>\n      <div class=\"modal-body\" style=\"overflow-y: auto; max-height: 510.288px;\">\n        <div class=\"dataform-toolitem clearfix\"></div>\n        <form class=\"form-horizontal\" role=\"form\" autocomplete=\"off\">\n          <div class=\"form-group\">\n            <div class=\"\">\n              <label for=\"dgMasterqueryObj_上噴嘴\" class=\"col-sm-2 control-label form-field\" data-options=\"field:'上噴嘴',title:'上噴嘴',operator:'%',defaultValue:'00',queryName:'dgMasterqueryObj_0'\">上噴嘴</label>\n            </div>\n            <div class=\"form-editor  col-sm-10\">\n              <select class=\"form-control bootstrap-combobox\" id=\"PromptDialog_上噴嘴\" name=\"上噴嘴\" data-options=\"remoteName:'',fromSysParameters:false,valueField:'',textField:'',items:[{value:'0',text:'請選擇'},{value:'03',text:'3'},{value:'04',text:'4'},{value:'08',text:'8'},{value:'16',text:'16'}],whereItems:[],readonly:false,multiple:false,multipleSeparator:','\">\n                <option style=\"display:none\" disabled=\"\">請選擇</option>\n                <option value=\"0\">請選擇</option>\n                <option value=\"03\">3</option>\n                <option value=\"04\">4</option>\n                <option value=\"08\">8</option>\n                <option value=\"16\">16</option>\n              </select>\n            </div>\n          </div>\n        </form><form class=\"form-horizontal\" role=\"form\" autocomplete=\"off\">\n          <div class=\"form-group\">\n            <div class=\"\">\n              <label for=\"dgMasterqueryObj_下噴嘴\" class=\"col-sm-2 control-label form-field\" data-options=\"field:'下噴嘴',title:'下噴嘴',operator:'%',defaultValue:'00',queryName:'dgMasterqueryObj_0'\">下噴嘴</label>\n            </div>\n            <div class=\"form-editor  col-sm-10\">\n              <select class=\"form-control bootstrap-combobox\" id=\"PromptDialog_下噴嘴\" name=\"下噴嘴\" data-options=\"remoteName:'',fromSysParameters:false,valueField:'',textField:'',items:[{value:'0',text:'請選擇'},{value:'03',text:'3'},{value:'04',text:'4'},{value:'08',text:'8'},{value:'16',text:'16'}],whereItems:[],readonly:false,multiple:false,multipleSeparator:','\">\n                <option style=\"display:none\" disabled=\"\">請選擇</option>\n                <option value=\"0\">請選擇</option>\n                <option value=\"03\">3</option>\n                <option value=\"04\">4</option>\n                <option value=\"08\">8</option>\n                <option value=\"16\">16</option>\n              </select>\n            </div>\n          </div>\n        </form>\n      </div>\n      <div class=\"modal-footer form-buttons\">\n        <button type=\"button\" class=\"btn btn-primary\" onclick=\"ok()\">確定</button>\n        <button type=\"button\" class=\"btn btn-default\" onclick=\"cancel()\">取消</button>\n      </div>\n    </div>\n  </div>\n</div>",
+    "type": "literal"
+  },
+  {
+    "id": "Literal2",
+    "html": "</div>",
+    "type": "literal"
+  },
+  {
+    "id": "Literal4",
+    "html": "<style>\n*{\n-webkit-touch-callout:none;\n-webkit-user-select:none;\n-khtml-user-select:none;\n-moz-user-select:none;\n-ms-user-select:none;\nuser-select:none;\n}\n  </style>",
+    "type": "literal"
+  }
+]
